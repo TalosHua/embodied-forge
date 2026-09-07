@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="TalosHua 的具身智能、机器人学习与真实世界工程知识站"><title>Embodied Forge · TalosHua</title><link rel="stylesheet" href="./styles.css"></head>
+<body>
+<header><div class="wrap nav"><a class="brand" href="./"><span>EF</span><div><b>EMBODIED FORGE</b><small>BY TALOSHUA</small></div></a><button class="menu" aria-label="打开菜单">☰</button><nav><a href="#projects">项目</a><a href="#knowledge">知识库</a><a href="#papers">论文</a><a href="#tutorials">教程</a><a href="#resources">资源</a><a href="#about">关于</a></nav></div></header>
+<main>
+<section class="hero"><div class="wrap hero-in"><p class="eyebrow">INDEPENDENT ROBOTICS NOTEBOOK</p><h1>Building Intelligence<br>Into <em>Motion.</em></h1><p class="lead">探索具身智能如何从算法走进真实世界。这里记录机器人学习、运动控制、硬件系统和 Sim2Real 的长期实践。</p><div class="actions"><a class="btn primary" href="#projects">探索项目 →</a><a class="btn" href="#knowledge">进入知识库</a></div><div class="stats"><span>PROJECTS <b>03</b></span><span>RESEARCH DOMAINS <b>06</b></span><span>STATUS <b>BUILDING</b></span></div></div></section>
+<section id="knowledge" class="section wrap"><div class="title"><div><small>01 / KNOWLEDGE MAP</small><h2>研究与工程方向</h2></div><p>从执行器到具身智能</p></div><div class="domains">
+<article><i>↗</i><h3>Locomotion</h3><p>四足与人形机器人的步态、运动策略和地形适应。</p></article>
+<article><i>◎</i><h3>Robot Learning</h3><p>强化学习、模仿学习、VLA 与行为基础模型。</p></article>
+<article><i>⌁</i><h3>Manipulation</h3><p>机械臂控制、灵巧操作与真实世界任务学习。</p></article>
+<article><i>◇</i><h3>Robot Hardware</h3><p>关节执行器、CAN、EtherCAT 与嵌入式控制。</p></article>
+<article><i>◉</i><h3>Perception</h3><p>深度相机、高程图、定位、感知与状态估计。</p></article>
+<article><i>⇄</i><h3>Sim2Real</h3><p>系统辨识、域随机化与实机部署经验。</p></article></div></section>
+<section id="projects" class="section alt"><div class="wrap"><div class="title"><div><small>02 / SELECTED WORK</small><h2>正在发生的项目</h2></div><p>真实机器人，真实问题</p></div><div class="projects">
+<article><div class="visual"><b>01</b><span></span></div><small>RESEARCH · IN PROGRESS</small><h3>仿生四足 Locomotion</h3><p>从动作数据到 AMP、ADD 与统一多步态策略，记录仿真训练、评估和实机迁移。</p><div class="tags"><b>Quadruped</b><b>RL</b><b>Sim2Real</b></div><a href="#about">项目详情 →</a></article>
+<article><div class="visual"><b>02</b><span></span></div><small>HARDWARE · PRIVATE</small><h3>NexaArm</h3><p>轻量桌面机械臂的结构、驱动、控制与具身操作研究。</p><div class="tags"><b>Manipulation</b><b>CAN</b><b>Design</b></div><a href="#about">项目详情 →</a></article>
+<article><div class="visual"><b>03</b><span></span></div><small>OPEN SOURCE</small><h3>多关节控制系统</h3><p>面向机器人关节的实时主从通信、状态机和安全控制架构。</p><div class="tags"><b>C++</b><b>ROS 2</b><b>Actuator</b></div><a href="https://github.com/TalosHua">GitHub →</a></article></div></div></section>
+<section id="papers" class="section wrap"><div class="title"><div><small>03 / LATEST INSIGHTS</small><h2>近期内容</h2></div><p>论文、教程与训练记录</p></div><div class="rows">
+<a href="#papers"><b>01</b><div><small>论文解读 · 研究笔记</small><h3>从 AMP 到行为基础模型：机器人动作生成路线</h3></div><i>→</i></a>
+<a id="tutorials" href="#tutorials"><b>02</b><div><small>工程教程 · 执行器</small><h3>使用 CAN 控制多关节电机：主站与从站架构</h3></div><i>→</i></a>
+<a href="#knowledge"><b>03</b><div><small>训练记录 · Locomotion</small><h3>低速 Walk 的速度跟随与对称性问题</h3></div><i>→</i></a></div></section>
+<section id="resources" class="manifest"><div class="wrap"><small>FROM SIMULATION TO REALITY</small><h2>不止讨论机器人。<br>把它真正做出来。</h2><div class="actions"><a class="btn primary" href="#about">关于这个站点 →</a><a class="profile" href="https://github.com/TalosHua">github.com/TalosHua</a></div></div></section>
+<section id="about" class="about wrap"><div><small>ABOUT</small><h2>一个独立的机器人研究与工程知识站。</h2></div><p>Embodied Forge 由 TalosHua 创建，用来长期记录具身智能、机器人学习和真实世界系统的研究过程。这里既有完成的项目，也保留仍在验证的问题、失败的尝试和可复用的工程经验。</p></section>
+</main>
+<footer><div class="wrap"><a class="brand" href="./"><span>EF</span><div><b>EMBODIED FORGE</b><small>BY TALOSHUA</small></div></a><p>Robotics · Learning · Real-world Systems</p><small>© 2026 TalosHua</small></div></footer>
+<script>const b=document.querySelector(".menu"),n=document.querySelector("nav");b.onclick=()=>n.classList.toggle("open");document.querySelectorAll("nav a").forEach(a=>a.onclick=()=>n.classList.remove("open"));</script></body></html>
