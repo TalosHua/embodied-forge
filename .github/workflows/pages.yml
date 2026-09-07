@@ -21,9 +21,11 @@ jobs:
       - uses: actions/configure-pages@v5
         with:
           enablement: true
+      - name: Build Markdown site
+        run: node scripts/build.mjs
       - uses: actions/upload-pages-artifact@v3
         with:
-          path: "."
+          path: "_site"
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
