@@ -20,17 +20,17 @@
 <a class="domain-card" href="./topics/embodied-ai/" style="--card:url('./assets/card-embodied-ai.svg')"><div class="card-photo"></div><div class="card-copy"><small>EMBODIED AI</small><h3>具身智能</h3><p>让智能在真实物理世界中感知、决策和行动。</p><i>→</i></div></a>
 </div></section>
 
-<section id="projects" class="section alt"><div class="wrap"><div class="title"><div><small>02 / SELECTED WORK</small><h2>正在发生的项目</h2></div><p>真实机器人，真实问题，持续更新</p></div><div class="projects">
-<a class="project-card" href="./projects/quadruped-locomotion/"><div class="project-img" style="--card:url('./assets/card-locomotion.svg')"><span>IN PROGRESS</span></div><div class="project-copy"><small>RESEARCH · LOCOMOTION</small><h3>仿生四足 Locomotion</h3><p>从动作数据、AMP 与 ADD，到连续指令和多步态统一策略。</p><div class="tags"><b>Quadruped</b><b>RL</b><b>Sim2Real</b></div></div></a>
-<a class="project-card" href="./projects/nexaarm/"><div class="project-img" style="--card:url('./assets/card-manipulation.svg')"><span>PRIVATE</span></div><div class="project-copy"><small>HARDWARE · MANIPULATION</small><h3>NexaArm</h3><p>轻量桌面机械臂的结构、关节、通信、控制与真实世界操作。</p><div class="tags"><b>Arm</b><b>CAN</b><b>Design</b></div></div></a>
-<a class="project-card" href="./projects/control-system/"><div class="project-img" style="--card:url('./assets/card-hardware.svg')"><span>OPEN SOURCE</span></div><div class="project-copy"><small>ENGINEERING · CONTROL</small><h3>多关节控制系统</h3><p>面向机器人关节的实时主从通信、状态机与安全控制架构。</p><div class="tags"><b>C++</b><b>ROS 2</b><b>Actuator</b></div></div></a>
-</div></div></section>
-
-<section id="insights" class="section wrap insights"><div class="title"><div><small>03 / LATEST INSIGHTS</small><h2>论文、教程与训练记录</h2></div><button class="search-open quiet">搜索全部内容 ⌕</button></div><div class="insight-grid">
-<a class="feature-insight" href="./papers/amp-to-foundation-models/"><div class="feature-image" style="--card:url('./assets/card-learning.svg')"></div><small>论文解读 · 研究路线</small><h3>从 AMP 到行为基础模型：机器人动作生成路线</h3><p>梳理模仿学习、技能表征、Flow Matching 与统一策略之间的关系。</p><span>阅读全文 →</span></a>
-<div class="rows"><a href="./tutorials/can-multi-motor/"><b>01</b><div><small>工程教程 · 执行器</small><h3>使用 CAN 控制多关节电机：主站与从站架构</h3><p>从驱动板 FOC、通信状态机到上位机控制链路。</p></div><i>→</i></a><a href="./notes/walk-symmetry/"><b>02</b><div><small>训练记录 · Locomotion</small><h3>低速 Walk 的速度跟随与对称性问题</h3><p>如何定位半周期速度不对称，以及奖励与数据层面的修正方法。</p></div><i>→</i></a><a href="./projects/quadruped-locomotion/"><b>03</b><div><small>项目日志 · Sim2Real</small><h3>从仿真策略到真实四足机器人</h3><p>系统辨识、控制延迟、零位和执行器差异。</p></div><i>→</i></a></div>
-</div></section>
-
+<section id="projects" class="section project-console"><div class="wrap project-board">
+<div class="featured-pane"><div class="panel-title"><div><small>02 / FEATURED PROJECTS</small><h2>精选项目</h2></div><p>REAL ROBOTS · REAL PROGRESS</p></div><div class="projects">
+<a class="project-card" href="./projects/quadruped-locomotion/"><div class="project-img" style="--card:url('./assets/project-locomotion.svg')"><span>IN PROGRESS</span></div><div class="project-copy"><small>RESEARCH · LOCOMOTION</small><h3>仿生四足 Locomotion</h3><p>从动作数据、AMP 与 ADD，到统一多步态策略和真实机器人验证。</p><div class="tags"><b>Quadruped</b><b>RL</b><b>Real World</b></div></div></a>
+<a class="project-card" href="./projects/nexaarm/"><div class="project-img" style="--card:url('./assets/project-nexaarm.svg')"><span>PRIVATE</span></div><div class="project-copy"><small>HARDWARE · MANIPULATION</small><h3>NexaArm</h3><p>轻量桌面机械臂的结构、关节、通信与具身操作研究。</p><div class="tags"><b>Manipulation</b><b>Hardware</b><b>CAN</b></div></div></a>
+<a class="project-card" href="./projects/control-system/"><div class="project-img" style="--card:url('./assets/project-sim2real.svg')"><span>OPEN SOURCE PLAN</span></div><div class="project-copy"><small>ENGINEERING · SIM2REAL</small><h3>Sim2Real Control</h3><p>连接仿真策略与真实硬件的控制、辨识、安全和部署链路。</p><div class="tags"><b>Sim2Real</b><b>Control</b><b>Real Robot</b></div></div></a>
+</div></div>
+<aside id="insights" class="insights-pane"><div class="panel-title"><div><small>03 / LATEST INSIGHTS</small><h2>近期内容</h2></div><button class="search-open panel-search">VIEW ALL ⌕</button></div><div class="insight-tabs"><span class="active">论文</span><span>教程</span><span>记录</span><span>更新</span></div><div class="rows">
+<a href="./papers/amp-to-foundation-models/"><b class="doc-thumb">P</b><div><small>论文解读 · RESEARCH MAP</small><h3>从 AMP 到行为基础模型</h3><p>模仿学习、技能表征与生成式动作策略。</p></div><i>→</i></a>
+<a href="./tutorials/can-multi-motor/"><b class="doc-thumb">T</b><div><small>工程教程 · ACTUATOR</small><h3>CAN 多关节电机控制架构</h3><p>从驱动板状态机到机器人主控。</p></div><i>→</i></a>
+<a href="./notes/walk-symmetry/"><b class="doc-thumb">N</b><div><small>训练记录 · LOCOMOTION</small><h3>低速 Walk 的对称性问题</h3><p>定位半周期速度差异与奖励设计。</p></div><i>→</i></a>
+</div></aside></div></section>
 <section id="resources" class="manifest"><div class="wrap"><small>FROM SIMULATION TO REALITY</small><h2>不止讨论机器人。<br>把它真正做出来。</h2><div class="actions"><a class="btn primary" href="./topics/robot-learning/">浏览知识地图 →</a><a class="profile" href="https://github.com/TalosHua">github.com/TalosHua</a></div></div></section>
 </main>
 <footer><div class="wrap"><a class="brand" href="./"><span>EF</span><div><b>EMBODIED FORGE</b><small>BY TALOSHUA</small></div></a><p>Robotics · Learning · Real-world Systems</p><small>© 2026 TalosHua</small></div></footer>
