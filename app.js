@@ -9,3 +9,17 @@ const index=[
 const dialog=document.querySelector('.search'),input=document.querySelector('#site-search'),results=document.querySelector('.search-results');
 function render(q=''){const key=q.trim().toLowerCase(),items=index.filter(x=>!key||`${x.type}${x.title}${x.desc}`.toLowerCase().includes(key));results.innerHTML=items.length?items.map(x=>`<a href="${x.url}"><small>${x.type}</small><b>${x.title}</b><div>${x.desc}</div></a>`).join(''):'<div class="search-empty">没有找到相关内容</div>'}
 document.querySelectorAll('.search-open').forEach(b=>b.onclick=()=>{render();dialog.showModal();setTimeout(()=>input.focus(),50)});if(dialog){document.querySelector('.search-close').onclick=()=>dialog.close();input.oninput=()=>render(input.value);dialog.onclick=e=>{if(e.target===dialog)dialog.close()}}
+
+// Technical diagrams remain in the readable article column, but can be inspected at native resolution.
+const figures=[...document.querySelectorAll('.prose img')];
+if(figures.length){
+  const viewer=document.createElement('dialog');
+  viewer.className='image-viewer';
+  const close=document.createElement('button');
+  close.type='button';close.setAttribute('aria-label','关闭大图');close.textContent='×';
+  const image=document.createElement('img');
+  viewer.append(close,image);document.body.append(viewer);
+  const closeViewer=()=>viewer.close();
+  close.onclick=closeViewer;viewer.onclick=e=>{if(e.target===viewer||e.target===image)closeViewer()};
+  figures.forEach(figure=>{figure.tabIndex=0;figure.setAttribute('role','button');figure.setAttribute('aria-label',`${figure.alt}，点击查看原图`);const open=()=>{image.src=figure.currentSrc||figure.src;image.alt=figure.alt;viewer.showModal()};figure.onclick=open;figure.onkeydown=e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();open()}}});
+}
