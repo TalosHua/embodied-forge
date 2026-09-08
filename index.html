@@ -5,6 +5,7 @@
   <meta name="description" content="TalosHua 的具身智能、机器人学习与真实世界工程知识站">
   <meta name="theme-color" content="#f7f9fc"><title>Embodied Forge · TalosHua</title>
   <link rel="stylesheet" href="./styles.css">
+  <style>.project-console .project-copy .project-question{min-height:44px;margin:0 0 9px;color:#25466e;font-weight:750;font-size:13px;line-height:1.5}</style>
 </head>
 <body>
 <header><div class="wrap nav"><a class="brand" href="./"><span>EF</span><div><b>EMBODIED FORGE</b><small>BY TALOSHUA</small></div></a><button class="menu" aria-label="打开菜单">☰</button><nav><a href="#projects">项目</a><a href="#knowledge">知识库</a><a href="#insights">论文与教程</a><a href="#resources">资源</a><button class="search-open" aria-label="搜索">⌕ 搜索</button></nav></div></header>
@@ -22,9 +23,9 @@
 
 <section id="projects" class="section project-console"><div class="wrap project-board">
 <div class="featured-pane"><div class="panel-title"><div><small>02 / FEATURED PROJECTS</small><h2>精选项目</h2></div><p>REAL ROBOTS · REAL PROGRESS</p></div><div class="projects">
-<a class="project-card" href="./projects/quadruped-locomotion/"><div class="project-img" style="--card:url('./assets/project-locomotion.svg')"><span>IN PROGRESS</span></div><div class="project-copy"><small>RESEARCH · LOCOMOTION</small><h3>仿生四足 Locomotion</h3><p>从动作数据、AMP 与 ADD，到统一多步态策略和真实机器人验证。</p><div class="tags"><b>Quadruped</b><b>RL</b><b>Real World</b></div></div></a>
-<a class="project-card" href="./projects/nexaarm/"><div class="project-img" style="--card:url('./assets/project-nexaarm.svg')"><span>PRIVATE</span></div><div class="project-copy"><small>HARDWARE · MANIPULATION</small><h3>NexaArm</h3><p>轻量桌面机械臂的结构、关节、通信与具身操作研究。</p><div class="tags"><b>Manipulation</b><b>Hardware</b><b>CAN</b></div></div></a>
-<a class="project-card" href="./projects/control-system/"><div class="project-img" style="--card:url('./assets/project-sim2real.svg')"><span>OPEN SOURCE PLAN</span></div><div class="project-copy"><small>ENGINEERING · SIM2REAL</small><h3>Sim2Real Control</h3><p>连接仿真策略与真实硬件的控制、辨识、安全和部署链路。</p><div class="tags"><b>Sim2Real</b><b>Control</b><b>Real Robot</b></div></div></a>
+<a class="project-card" href="./projects/quadruped-locomotion/"><div class="project-img" style="--card:url('./assets/project-locomotion.svg')"><span>IN PROGRESS</span></div><div class="project-copy"><small>RESEARCH · LOCOMOTION</small><h3>仿生四足 Locomotion</h3><p class="project-question">如何让策略既听懂连续指令，又保留自然、可迁移的步态？</p><p>从动作数据、AMP 与 ADD，到统一多步态策略和真实机器人验证。</p><div class="tags"><b>Quadruped</b><b>RL</b><b>Real World</b></div></div></a>
+<a class="project-card" href="./projects/nexaarm/"><div class="project-img" style="--card:url('./assets/project-nexaarm.svg')"><span>PRIVATE</span></div><div class="project-copy"><small>HARDWARE · MANIPULATION</small><h3>NexaArm</h3><p class="project-question">怎样兼顾产品感、控制能力与真实世界操作？</p><p>轻量桌面机械臂的结构、关节、通信与具身操作研究。</p><div class="tags"><b>Manipulation</b><b>Hardware</b><b>CAN</b></div></div></a>
+<a class="project-card" href="./projects/control-system/"><div class="project-img" style="--card:url('./assets/project-sim2real.svg')"><span>OPEN SOURCE PLAN</span></div><div class="project-copy"><small>ENGINEERING · SIM2REAL</small><h3>Sim2Real Control</h3><p class="project-question">如何把多个执行器安全、实时地组织成可扩展系统？</p><p>连接仿真策略与真实硬件的控制、辨识、安全和部署链路。</p><div class="tags"><b>Sim2Real</b><b>Control</b><b>Real Robot</b></div></div></a>
 </div></div>
 <aside id="insights" class="insights-pane"><div class="panel-title"><div><small>03 / LATEST INSIGHTS</small><h2>近期内容</h2></div><button class="search-open panel-search">VIEW ALL ⌕</button></div><div class="insight-tabs"><span class="active">论文</span><span>教程</span><span>记录</span><span>更新</span></div><div class="rows">
 <a href="./papers/amp-to-foundation-models/"><b class="doc-thumb">P</b><div><small>论文解读 · RESEARCH MAP</small><h3>从 AMP 到行为基础模型</h3><p>模仿学习、技能表征与生成式动作策略。</p></div><i>→</i></a>
