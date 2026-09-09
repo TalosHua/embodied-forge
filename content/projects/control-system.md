@@ -1,5 +1,5 @@
 ---
-title: 多关节机器人控制系统
+title: 多关节控制系统
 description: 从关节驱动板到机器人主控的实时通信、状态机与安全架构。
 type: PROJECT
 status: OPEN SOURCE PLAN
