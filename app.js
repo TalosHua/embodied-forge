@@ -1,6 +1,6 @@
 const menu=document.querySelector('.menu'),nav=document.querySelector('.nav nav');if(menu)menu.onclick=()=>nav.classList.toggle('open');document.querySelectorAll('.nav nav a').forEach(a=>a.onclick=()=>nav.classList.remove('open'));
 const index=[
- {type:'项目',title:'仿生四足 Locomotion',desc:'动作数据、AMP、ADD、多步态、Sim2Real',url:'./projects/quadruped-locomotion/'},
+ {type:'项目',title:'Locomotion',desc:'Go2、MJLab、动作数据、强化学习、多步态、Sim2Real',url:'./projects/quadruped-locomotion/'},
  {type:'项目',title:'NexaArm',desc:'桌面机械臂、结构设计、关节控制、CAN',url:'./projects/nexaarm/'},
  {type:'项目',title:'多关节控制系统',desc:'C++、ROS 2、执行器、主从通信',url:'./projects/control-system/'},
  {type:'论文',title:'从 AMP 到行为基础模型',desc:'模仿学习、技能表征、Flow Matching、统一策略',url:'./papers/amp-to-foundation-models/'},
