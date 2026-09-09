@@ -1,13 +1,13 @@
 ---
-title: 仿生四足 Locomotion
-description: 从专家动作、强化学习到真实四足机器人的长期运动控制项目。
+title: Locomotion
+description: 基于 MJLab 训练与评估运动策略，并部署到 Unitree Go2 展示真实世界效果。
 type: PROJECT
 status: IN PROGRESS
 date: 2026-09-07
 tags: Quadruped · RL · Sim2Real
 ---
 ## 项目目标
-目标不是只让四足机器人“能走”，而是得到能够连续响应速度和转向指令、在不同速度段切换步态，并保留动物运动风格的统一策略。
+以 Unitree Go2 为实机平台，目标不是只让四足机器人“能走”，而是得到能够连续响应速度和转向指令、在不同速度段切换步态，并保留自然运动风格的统一策略。每个阶段模型都会记录训练设定，并展示对应的仿真与实机视频效果。
 
 ## 当前技术路线
 - Stage 1：使用 ADD 或高精度模仿方法训练单技能专家。
