@@ -10,4 +10,4 @@ tags: RL · Imitation · VLA
 
 ## 推荐阅读
 - [从 AMP 到行为基础模型](../../papers/amp-to-foundation-models/)
-- [仿生四足 Locomotion 项目](../../projects/quadruped-locomotion/)
+- [Locomotion 项目](../../projects/quadruped-locomotion/)
